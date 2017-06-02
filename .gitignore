@@ -1,0 +1,9 @@
+config.inc.php
+config.sh
+data/FR.txt
+data/FR_geonames.txt
+data/readme.txt
+data/readme_geonames.txt
+data/SunMoon/*.o
+apiids.inc.php
+googleapi
