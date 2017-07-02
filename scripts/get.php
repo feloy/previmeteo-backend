@@ -65,9 +65,9 @@ exit;
 function get_geoname ($id, $h1only) {
   global $pmlog, $pmpass, $base;
   $args = 'log='.$pmlog.'&pass='.$pmpass.'&id='.$id;
-  $url14j = 'http://webservices.previmeteo.net/prod_clients/elol/apercu.php?'.$args;
-  $url7j = 'http://webservices.previmeteo.net/prod_clients/elol/previs.php?'.$args;
-  $url1h = 'http://webservices.previmeteo.net/prod_clients/elol/previs_1h.php?'.$args;
+  $url14j = $url_apiprevimeteo.'/apercu.php?'.$args;
+  $url7j = $url_apiprevimeteo.'/previs.php?'.$args;
+  $url1h = $url_apiprevimeteo.'/previs_1h.php?'.$args;
 
   if (!$h1only) {
     $res = file_get_contents ($url14j);
